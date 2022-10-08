@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  DemoSwiftUI
+
+  Created by Amr Koritem on 03/10/2022.
+  
+*/
+
+"Home" = "الرئيسية";
+"Show Detail View" = "إظهار التفاصيل";
+"Change the language" = "تغيير اللغة";
+"Select a language" = "اختر اللغة";
+"Details" = "التفاصيل";
