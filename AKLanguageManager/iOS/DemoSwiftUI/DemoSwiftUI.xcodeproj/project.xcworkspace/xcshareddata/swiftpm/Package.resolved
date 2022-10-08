@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "aklanguagemanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AmrKoritem/AKLanguageManager.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "8dfb7e214cc2acd15ef0dc6b3b5714d25b449c8b"
+      }
+    }
+  ],
+  "version" : 2
+}
