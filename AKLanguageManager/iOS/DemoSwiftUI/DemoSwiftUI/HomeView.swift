@@ -13,7 +13,7 @@ struct HomeView: View {
     private var isPresented = false
 
     var body: some View {
-        return NavigationView {
+        NavigationView {
             VStack {
                 Image("direction")
                     .resizable()
