@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Change Arrow Direction"; ObjectID = "CW3-7l-rUe"; */
+"CW3-7l-rUe.normalTitle" = "Change Arrow Direction";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "E1D-HD-WUW"; */
+"E1D-HD-WUW.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Go To Settings"; ObjectID = "F93-96-5eT"; */
+"F93-96-5eT.normalTitle" = "Go To Settings";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "Oe9-2G-SY6"; */
+"Oe9-2G-SY6.title" = "First";
+
+/* Class = "UIButton"; normalTitle = "Switch Image Direction"; ObjectID = "Y5T-fC-EA6"; */
+"Y5T-fC-EA6.normalTitle" = "Switch Image Direction";
+
+/* Class = "UIButton"; normalTitle = "تغيير إلى العربية"; ObjectID = "dNs-wE-XW1"; */
+"dNs-wE-XW1.normalTitle" = "تغيير إلى العربية";
+
+/* Class = "UITextField"; placeholder = "TextField"; ObjectID = "eJO-Gb-Ixi"; */
+"eJO-Gb-Ixi.placeholder" = "TextField";
+
+/* Class = "UITabBarItem"; title = "Second"; ObjectID = "xVy-zu-Wy6"; */
+"xVy-zu-Wy6.title" = "Second";
