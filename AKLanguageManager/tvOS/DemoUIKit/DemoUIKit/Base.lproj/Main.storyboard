@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o70-Q5-eS8">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="DemoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1D-HD-WUW">
+                                <rect key="frame" x="100" y="322" width="92" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="direction-image" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-FA-nD2">
+                                <rect key="frame" x="832" y="533" width="256" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5T-fC-EA6">
+                                <rect key="frame" x="727" y="427" width="466" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Switch Image Direction"/>
+                                <connections>
+                                    <action selector="switchImageDirection" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="4Xh-KR-iRC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-Gb-Ixi">
+                                <rect key="frame" x="100" y="427" width="191" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qKK-Tj-xp9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F93-96-5eT">
+                                <rect key="frame" x="798" y="914" width="324" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go To Settings"/>
+                                <connections>
+                                    <action selector="goToSettings" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="evz-Jb-5t7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fbg-FA-nD2" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" id="4kq-uK-xcc"/>
+                            <constraint firstItem="fbg-FA-nD2" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="EPd-iO-ZOn"/>
+                            <constraint firstItem="F93-96-5eT" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="N3X-W3-WsP"/>
+                            <constraint firstItem="fbg-FA-nD2" firstAttribute="top" secondItem="Y5T-fC-EA6" secondAttribute="bottom" constant="20" id="PhZ-E6-TeP"/>
+                            <constraint firstItem="E1D-HD-WUW" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="20" id="Srg-Kt-vyq"/>
+                            <constraint firstItem="eJO-Gb-Ixi" firstAttribute="leading" secondItem="E1D-HD-WUW" secondAttribute="leading" id="Web-Zd-mLD"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="F93-96-5eT" secondAttribute="bottom" constant="20" id="Wgk-zZ-Kiu"/>
+                            <constraint firstItem="Y5T-fC-EA6" firstAttribute="centerX" secondItem="fbg-FA-nD2" secondAttribute="centerX" id="aJg-kL-jPQ"/>
+                            <constraint firstItem="eJO-Gb-Ixi" firstAttribute="top" secondItem="E1D-HD-WUW" secondAttribute="bottom" constant="59" id="bfw-8R-x6C"/>
+                            <constraint firstItem="E1D-HD-WUW" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="20" id="qiD-bM-t0L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MW6-MD-KVo"/>
+                    <connections>
+                        <outlet property="imageView" destination="fbg-FA-nD2" id="EMe-rR-KUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4882" y="23"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="0vS-Ow-GMh">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="g2K-JZ-Hk7" customClass="SettingsViewController" customModule="DemoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BS7-nK-A0n"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWc-EH-Eor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bSk-NM-Jze">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNs-wE-XW1">
+                                <rect key="frame" x="805" y="497" width="310" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تغيير إلى العربية"/>
+                                <connections>
+                                    <action selector="changeLanguage" destination="g2K-JZ-Hk7" eventType="primaryActionTriggered" id="aX8-zM-2BZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wg3-9l-KX4"/>
+                        <constraints>
+                            <constraint firstItem="dNs-wE-XW1" firstAttribute="centerX" secondItem="wg3-9l-KX4" secondAttribute="centerX" id="fqT-4Z-sV8"/>
+                            <constraint firstItem="dNs-wE-XW1" firstAttribute="centerY" secondItem="wg3-9l-KX4" secondAttribute="centerY" id="zTL-6S-A6q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euQ-7z-N9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7441" y="23"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="aza-ZA-MfZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FaF-mw-eq7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="arrowshape.turn.up.right.fill" catalog="system" selectedImage="arrowshape.turn.up.right.fill" id="Oe9-2G-SY6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gTf-0f-NQ9">
+                        <rect key="frame" x="0.0" y="157" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yjd-1T-dkb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xQ-6a-N3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="23"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="5lW-EK-J6G">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="HgW-Tj-H6V" customClass="SecondViewController" customModule="DemoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kmb-kc-K9d"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibw-SP-xxM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tq3-BF-fLh">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CW3-7l-rUe">
+                                <rect key="frame" x="684.5" y="545.5" width="551.5" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="Change Arrow Direction"/>
+                                <connections>
+                                    <action selector="changeButtonImageDirection:" destination="HgW-Tj-H6V" eventType="primaryActionTriggered" id="1uW-3M-lh4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iCc-I4-Doz"/>
+                        <constraints>
+                            <constraint firstItem="CW3-7l-rUe" firstAttribute="centerX" secondItem="iCc-I4-Doz" secondAttribute="centerX" id="CTu-FU-z0h"/>
+                            <constraint firstItem="CW3-7l-rUe" firstAttribute="centerY" secondItem="iCc-I4-Doz" secondAttribute="centerY" id="KsV-md-RZ4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="arrowshape.turn.up.right.fill" catalog="system" selectedImage="arrowshape.turn.up.right.fill" id="xVy-zu-Wy6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS3-w8-c9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="2308"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Al-td-W5N">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o70-Q5-eS8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DsX-0C-DJp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FaF-mw-eq7" kind="relationship" relationship="viewControllers" id="UNc-1M-YFJ"/>
+                        <segue destination="HgW-Tj-H6V" kind="relationship" relationship="viewControllers" id="vwn-mX-RvV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVW-nZ-NOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="1244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="96"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="109"/>
+        <image name="direction-image" width="256" height="256"/>
+    </resources>
+</document>
