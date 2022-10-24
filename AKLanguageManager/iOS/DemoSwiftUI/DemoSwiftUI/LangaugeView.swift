@@ -20,7 +20,8 @@ struct LangaugeView: View {
             HStack {
                 Button("العربية") {
                     withAnimation {
-                        localizer.selectedLanguage = .ar
+                        // You don't even need the environment object to change the language.
+                        AKLanguageManager.shared.setLanguage(language: .ar)
                     }
                 }
                 .padding()
