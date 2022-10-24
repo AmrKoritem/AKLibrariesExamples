@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AmrKoritem/AKLanguageManager.git",
       "state" : {
-        "revision" : "6b88242735142d039f22bee52baa5b6e356665a4",
-        "version" : "1.0.0"
+        "revision" : "30c4bcb8895917164003e07e552209966f78d97e",
+        "version" : "1.0.2"
       }
     }
   ],
