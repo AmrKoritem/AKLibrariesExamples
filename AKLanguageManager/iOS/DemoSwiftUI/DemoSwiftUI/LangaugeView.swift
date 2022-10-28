@@ -9,9 +9,6 @@ import SwiftUI
 import AKLanguageManager
 
 struct LangaugeView: View {
-    @EnvironmentObject
-    var localizer: ObservedLocalizer
-
     var body: some View {
         VStack {
             Text("Select a language".localized)
@@ -20,7 +17,6 @@ struct LangaugeView: View {
             HStack {
                 Button("العربية") {
                     withAnimation {
-                        // You don't even need the environment object to change the language.
                         AKLanguageManager.shared.setLanguage(language: .ar)
                     }
                 }
@@ -28,7 +24,7 @@ struct LangaugeView: View {
                 Spacer()
                 Button("English") {
                     withAnimation {
-                        localizer.selectedLanguage = .en
+                        AKLanguageManager.shared.setLanguage(language: .en)
                     }
                 }
                 .padding()
