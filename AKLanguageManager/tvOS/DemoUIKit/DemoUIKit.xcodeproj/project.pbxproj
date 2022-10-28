@@ -14,12 +14,12 @@
 		1D2A6CB528F27ADC000EE30D /* DemoUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A6CB428F27ADC000EE30D /* DemoUIKitTests.swift */; };
 		1D2A6CBF28F27ADC000EE30D /* DemoUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A6CBE28F27ADC000EE30D /* DemoUIKitUITests.swift */; };
 		1D2A6CC128F27ADC000EE30D /* DemoUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A6CC028F27ADC000EE30D /* DemoUIKitUITestsLaunchTests.swift */; };
-		1D47B2A028FFB2650002B20A /* AKLanguageManager in Frameworks */ = {isa = PBXBuildFile; productRef = 1D47B29F28FFB2650002B20A /* AKLanguageManager */; };
 		1D47B2A228FFB34A0002B20A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47B2A128FFB34A0002B20A /* FirstViewController.swift */; };
 		1D47B2A428FFB3750002B20A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47B2A328FFB3750002B20A /* SecondViewController.swift */; };
 		1D47B2A628FFB3850002B20A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47B2A528FFB3850002B20A /* SettingsViewController.swift */; };
 		1D47B2A828FFBCE00002B20A /* Routing+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D47B2A728FFBCE00002B20A /* Routing+Extension.swift */; };
 		1D47B2AE28FFBEA30002B20A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D47B2B028FFBEA30002B20A /* Localizable.strings */; };
+		1D7D4D0D290A43F500085878 /* AKLanguageManager in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7D4D0C290A43F500085878 /* AKLanguageManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D47B2A028FFB2650002B20A /* AKLanguageManager in Frameworks */,
+				1D7D4D0D290A43F500085878 /* AKLanguageManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			);
 			name = DemoUIKit;
 			packageProductDependencies = (
-				1D47B29F28FFB2650002B20A /* AKLanguageManager */,
+				1D7D4D0C290A43F500085878 /* AKLanguageManager */,
 			);
 			productName = DemoUIKit;
 			productReference = 1D2A6C9D28F27AD7000EE30D /* DemoUIKit.app */;
@@ -240,7 +240,7 @@
 			);
 			mainGroup = 1D2A6C9428F27AD7000EE30D;
 			packageReferences = (
-				1D47B29E28FFB2650002B20A /* XCRemoteSwiftPackageReference "AKLanguageManager" */,
+				1D7D4D0B290A43F500085878 /* XCRemoteSwiftPackageReference "AKLanguageManager" */,
 			);
 			productRefGroup = 1D2A6C9E28F27AD7000EE30D /* Products */;
 			projectDirPath = "";
@@ -643,20 +643,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1D47B29E28FFB2650002B20A /* XCRemoteSwiftPackageReference "AKLanguageManager" */ = {
+		1D7D4D0B290A43F500085878 /* XCRemoteSwiftPackageReference "AKLanguageManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AmrKoritem/AKLanguageManager.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1D47B29F28FFB2650002B20A /* AKLanguageManager */ = {
+		1D7D4D0C290A43F500085878 /* AKLanguageManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1D47B29E28FFB2650002B20A /* XCRemoteSwiftPackageReference "AKLanguageManager" */;
+			package = 1D7D4D0B290A43F500085878 /* XCRemoteSwiftPackageReference "AKLanguageManager" */;
 			productName = AKLanguageManager;
 		};
 /* End XCSwiftPackageProductDependency section */
