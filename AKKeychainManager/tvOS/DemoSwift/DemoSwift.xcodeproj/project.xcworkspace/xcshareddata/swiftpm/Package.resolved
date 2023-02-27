@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "akkeychainmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AmrKoritem/AKKeychainManager",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cddd711b28e1cd3c18cee132057a4ead8bf62c59"
+      }
+    }
+  ],
+  "version" : 2
+}
